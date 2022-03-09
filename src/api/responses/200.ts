@@ -3,7 +3,8 @@ import { IResponse } from 'types';
 
 export class OK implements IResponse {
 	error = false;
-	status = 200;
+	statusCode = 200;
+	statusText = 'OK Success';
 	data: any = {};
 	message = '';
 
